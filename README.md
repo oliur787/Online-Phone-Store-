@@ -1,2 +1,3 @@
 # Online-Phone-Store-
-The Online Mobile Shop is a web-based platform that makes it easy to browse, choose, and buy mobile phones online.
+Group 7
+Member- Name : Md Oliur Rahman Khan Id 2111444642 , Name: Rian jahin jaman kabbo Id: 2021045042 , Name:Sazzadul Islam Sajin 2112447642
