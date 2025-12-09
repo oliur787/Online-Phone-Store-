@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+header{
+    background-image: url(../images/banner-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid red;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fffefe;
+    font-size: 18px;
+    padding: 0;
+    margin-left:20px;
+    position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #008ed6;
+}
+
+.results {
+    background-color: white;
+}
+
+.results div:hover{
+    background-color: gray ;
+    color: white;
+    cursor: pointer; 
+}
+
+.left h4{
+    color: #07699e;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+.left h1{
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.left p{
+    font-size: 18px;
+    color: #a19e9e;
+    padding-bottom: 65px;
+    padding-right: 90px;
+}
+
+.online_course{
+    background: #F2DDC1;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    padding: 20px 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.online_course img{
+    
+    background: url(.jpg), #CFB6B6;
+    border-radius: 11px;
+    margin: 24px 0;
+}
+
+.btn-course{
+    padding: 8px 28px;
+    background: #1789c2;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+}
+.btn-course:hover{
+    color: white;
+    background: #025a86;
+    transition: .4s;
+}
+
+.brands{
+    background-color: #99A799;
+}
+.online_course:hover{
+    background: #e9d0ad;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+footer{
+    background-color: black;
+    padding-top: 25px;
+    padding-bottom: 2px;
+}
+.text-center {
+    margin-bottom: 10px;
+}
+.logos{
+    width: 18%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding-top: 20px;
+}
+footer i{
+    color: #504f55;
+    font-size: 20px;
+}
+footer i:hover{
+    color: #008ed6;
+    cursor: pointer;
+}
+footer P{
+    font-size: 14px;
+    color: #504f55;
+    font-weight: 500;
+}

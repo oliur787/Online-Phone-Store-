@@ -1,0 +1,117 @@
+
+.navbar {
+  background-color: currentColor;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    padding: 0;
+    margin-left:20px;
+    position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    font-weight: 400;
+    color: #008ed6;
+}
+
+.contact{
+    background: #c6d1d8e0;
+    position: relative;
+    padding-bottom: 500px;
+}
+.contact_info{
+    padding-bottom: 60px;
+}
+.contact_info i{
+    font-size: 30px;
+    color: black;
+    padding-bottom: 25px;
+}
+.contact_info p{
+    font-size: 17px;
+    color: black;
+    margin-bottom: 0;
+}
+
+
+form{
+    width: 55%;
+    background-color: black;
+    padding:0 80px;
+    padding-top: 60px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+form input{
+    background: transparent !important;
+    border: none !important;
+    border: 1px solid #444348 !important;
+    margin-bottom: 20px;
+    height: 46px;
+}
+form input::placeholder{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+form input[type="submit"]{
+    color: white;
+    background: #008ed6 !important;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    border-radius: 3px;
+}
+
+form textarea{
+    background: transparent !important;
+    border: none !important;
+    border: 1px solid #444348 !important;
+}
+form textarea::placeholder{
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+footer{
+    background-color: black;
+    padding-top: 25px;
+    padding-bottom: 2px;
+}
+
+.logos{
+    width: 18%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding-top: 20px;
+}
+
+
+
+.text-center {
+    padding-bottom: 20px;
+  }
+footer i{
+    color: #504f55;
+    font-size: 20px;
+}
+footer i:hover{
+    color: #008ed6;
+    cursor: pointer;
+}
+footer P{
+    font-size: 14px;
+    color: #504f55;
+    font-weight: 500;
+}
