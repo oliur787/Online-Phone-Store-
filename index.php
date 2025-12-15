@@ -1,4 +1,4 @@
-Online<?php 
+<?php 
 session_start(); // Start the session to access session variables
 
 // Check if the user is logged in
@@ -8,7 +8,7 @@ if (isset($_SESSION['user_id'])) {
 } else {
     echo "User is not logged in.";
 }
-?>    
+?> 	
 
 
 <!doctype html>
@@ -20,40 +20,40 @@ if (isset($_SESSION['user_id'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Online Phone Store</title>
 
-        
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css?r=x">
 
-</head>
+    </head>
 
 <body>
 
-    <header style="min-height: 100vh;">
+    <header>
 
-            <div class="row navbar">
-                <nav class="navbar navbar-expand-sm navbar-light">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#"><img src="images/Imageofbackground.png" alt="" class="img-fluid"></a>
-                        
-                        <div  id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+        <div class="row navbar">
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="images/Imageofbackground.png" alt="" class="img-fluid"></a>
+                    
+                    <div id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
 
-                                <li class="nav-item ">
-                                    <input class ="search js-search" oninput="get_data(this.value)" type="text" autofocus="true" placeholder = "Search Here">
-                                    <div class="results js-results">
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                </li>
+                            <li class="nav-item ">
+                                <input class ="search js-search" oninput="get_data(this.value)" type="text" autofocus="true" placeholder = "Search Here">
+                                <div class="results js-results">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </li>
 
-                                <li class="nav-item ">
-                                    <a class="nav-link" aria-current="page" href="./index.php">Home</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    
-                                    <?php
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="./index.php">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                
+                                <?php
                                 if(!isset($_SESSION['username'])){
                                     echo "<a class='nav-link' href='./login.php'>Login</a>";
                                 }
@@ -66,7 +66,7 @@ if (isset($_SESSION['user_id'])) {
                                         <ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
                                             <li><a class='dropdown-item' href='#'>". $_SESSION['username'] ."</a></li>
                                             <hr>
-                                            <li><a class='dropdown-item' href='./orderhistory.php'>My Orders</a></li> <!-- New My Orders Link -->
+                                            <li><a class='dropdown-item' href='./orderhistory.php'>My Orders</a></li>
                                             <li><a class='dropdown-item' href='./logout.php'>Logout
                                             </a></li>
                                             
@@ -75,42 +75,33 @@ if (isset($_SESSION['user_id'])) {
                                 }
                                 ?>
                                     
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./about.php">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./contact.php">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div> 
-                    </div>      
-                </nav>
-            </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.php">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div> 		
+            </nav>
+        </div>
 
-            <div class="row hg align-items-center" style="padding-left: 10%;">
-                <div class="col-lg-6 col-md-8 col-sm-12 left">
-                    <h4>resell phone store</h4>
+        <div class="row hg align-items-center justify-content-center text-center" style="padding-left: 0;">
+            <div class="col-lg-12 col-md-10 col-sm-12 left">
+                <h4>Online Phone Store</h4>
 
-                    <h1>Be Connected with your <br> Friends & Families.</h1> <a href="login.php" 
-   class="btn btn-primary mt-4 px-4 py-2" 
-   style="font-size: 18px; border-radius: 8px;">
-   Login
-</a>
+                <h1>Your Reliable Online Phone Store <br> Buy & Sell Anytime.</h1> <a href="login.php" 
+                class="btn btn-primary mt-4 px-4 py-2" 
+                style="font-size: 18px; border-radius: 8px;">
+                Login
+                </a>
 
-                    <P>
+                <P>
  
-                    </P>
-                </div>
-                <div class="col-lg-6 col-md-8 col-sm-12  ">
-                    <img  class="img-fluid" src="images/background-phone.png" alt="">
-                </div>
+                </P>
+            </div>
             </div>
 
     </header>
-
-
-
 
 
     <section class="brands">
@@ -130,7 +121,7 @@ if (isset($_SESSION['user_id'])) {
                     <div class="online_course">
                         <img src="images/samsung.png" alt="" class="img-fluid">
                         <h3>Samsung</h3>
-                        <p>Let's Connect</p>       
+                        <p>Let's Connect</p> 		
                         <a href="./product.php?brand=samsung" class="btn btn-course">Buy Product</a>
                     </div>
                 </div>
@@ -193,7 +184,7 @@ if (isset($_SESSION['user_id'])) {
                 </div>
             </div>
             <div class="row text-center">
-                <p>Copyright © 2023 Let's Connect All rights reserved.</p>
+                <p>Copyright © 2025 Online Phone Store All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -201,9 +192,9 @@ if (isset($_SESSION['user_id'])) {
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-   
-  
+    
  
+    
 
 
 </body>
@@ -225,7 +216,7 @@ if (isset($_SESSION['user_id'])) {
         ajax.addEventListener('readystatechange',function(e){
             if(ajax.readyState == 4 && ajax.status == 200){
                 //result are back 
-                 handle_result(ajax.responseText);
+                  handle_result(ajax.responseText);
             }
         });
 
@@ -236,17 +227,17 @@ if (isset($_SESSION['user_id'])) {
     function handle_result(result)
     {
 
-         var result_div = document.querySelector(".js-results");
-         var str = "";
+        var result_div = document.querySelector(".js-results");
+        var str = "";
 
-         var obj = JSON.parse(result);
-         for (var i = obj.length - 1; i >=0; i--){
+        var obj = JSON.parse(result);
+        for (var i = obj.length - 1; i >=0; i--){
             
-           
+            
             str += `<a href='product_details.php?id=${obj[i].id}'><div>` + obj[i].model + "</div></a>";
-         }
+        }
 
-         result_div.innerHTML = str;
+        result_div.innerHTML = str;
     }
 
 </script>
